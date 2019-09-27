@@ -31,7 +31,7 @@ df_time_tracking.Duration = pd.to_timedelta(df_time_tracking.Duration)
 
 df_weight = pd.read_csv("data/weight.csv", index_col="date", parse_dates=["date"])
 end_date = "2019-05-31"
-start_date = "2019-07-04"
+start_date = "2019-09-24"
 df_weight_old = df_weight.loc[:end_date]
 df_weight_new = df_weight.loc[start_date:]
 
