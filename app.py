@@ -805,7 +805,7 @@ def update_deep_work_plot(rolling_average):
              [Input("weight-plot-new", "hoverData")])
 def update_body_image(hover_data):
     date = hover_data["points"][0]["x"]
-    src = "https://raw.githubusercontent.com/SebastianMantey/helper_repo/master/images/{}.jpg".format(date)
+    src = "https://raw.githubusercontent.com/SebastianMantey/helper_repo/master/images/{}.JPG".format(date)
     
     return src
 
