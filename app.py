@@ -257,7 +257,7 @@ health = [
                 hoverData={"points": [{"x": most_recent_date_weight_new}]}
             ),
             html.Img(
-                id="body-image",
+                id="weight-image",
                 className="three columns"
             )
         ]
@@ -801,7 +801,7 @@ def update_deep_work_plot(rolling_average):
     return deep_work_plot(df_deep_work, rolling_average)
 
     
-@app.callback(Output("body-image", "src"),
+@app.callback(Output("weight-image", "src"),
              [Input("weight-plot-new", "hoverData")])
 def update_body_image(hover_data):
     date = hover_data["points"][0]["x"]
