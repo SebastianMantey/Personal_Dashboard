@@ -36,7 +36,7 @@ df_weight_old = df_weight.loc[:end_date]
 df_weight_new = df_weight.loc[start_date:]
 
 # 2. set some variables
-header_image_source = "https://raw.githubusercontent.com/SebastianMantey/Personal_Dashboard/master/header%20image.png"
+header_image_source = "https://raw.githubusercontent.com/SebastianMantey/Personal_Dashboard/master/images/header%20image.png"
 header_image_height = 38
 header_image_width = 0.926 * header_image_height # preserving aspect ratio of image
 
@@ -805,7 +805,7 @@ def update_deep_work_plot(rolling_average):
              [Input("weight-plot-new", "hoverData")])
 def update_body_image(hover_data):
     date = hover_data["points"][0]["x"]
-    src = "https://raw.githubusercontent.com/SebastianMantey/helper_repo/master/images/{}.JPG".format(date)
+    src = "https://raw.githubusercontent.com/SebastianMantey/Personal_Dashboard/master/images/{}.JPG".format(date)
     
     return src
 
